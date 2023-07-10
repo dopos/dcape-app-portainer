@@ -1,0 +1,13 @@
+services:
+  # ------------------------------------------------------------------------------
+  manager:
+    extends:
+      file: ${DCAPE_ROOT}/docker-compose.dcape.yml
+      service: template-traefik
+    image: ${PORTAINER_IMAGE}:${PORTAINER_VER}
+    labels:
+      - "traefik.http.routers.portainer.rule=Host(`${PORTAINER_HOST}`)"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${DCAPE_VAR}/portainer:/data
