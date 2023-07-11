@@ -1,6 +1,7 @@
 # Portainer init Makefile
 # This file included by ../../Makefile
 SHELL                 = /bin/bash
+CFG                  ?= .env
 
 # Docker image version tested for actual dcape release
 PORTAINER_VER0       ?= 2.18.4-alpine
@@ -16,6 +17,8 @@ PORTAINER_IMAGE      ?= portainer/portainer-ce
 #- Docker image version
 PORTAINER_VER        ?= $(PORTAINER_VER0)
 
+#- dcape root directory
+DCAPE_ROOT           ?= $(DCAPE_ROOT)
 # ------------------------------------------------------------------------------
 
 -include $(CFG)
