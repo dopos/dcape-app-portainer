@@ -25,7 +25,6 @@ DCAPE_ROOT           ?= $(DCAPE_ROOT)
 export
 
 ifdef DCAPE_STACK
-include $(DCAPE_ROOT)/$(CFG)
 include $(DCAPE_ROOT)/Makefile.dcape
 else
 include $(DCAPE_ROOT)/Makefile.app
@@ -38,5 +37,3 @@ init:
 	  echo "Warning: PORTAINER_VER in dcape ($$PORTAINER_VER0) differs from yours ($$PORTAINER_VER)" ; \
 	fi
 	@echo "  URL: $(DCAPE_SCHEME)://$(PORTAINER_HOST)"
-
-setup:
