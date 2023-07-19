@@ -1,5 +1,7 @@
-# Portainer init Makefile
-# This file included by ../../Makefile
+## Portainer Makefile.
+## Used with dcape at ../../
+#:
+
 SHELL                 = /bin/bash
 CFG                  ?= .env
 
@@ -19,6 +21,7 @@ PORTAINER_VER        ?= $(PORTAINER_VER0)
 
 #- dcape root directory
 DCAPE_ROOT           ?= $(DCAPE_ROOT)
+
 # ------------------------------------------------------------------------------
 
 -include $(CFG)
@@ -32,6 +35,7 @@ endif
 
 # ------------------------------------------------------------------------------
 
+# check app version
 init:
 	@if [[ "$$PORTAINER_VER0" != "$$PORTAINER_VER" ]] ; then \
 	  echo "Warning: PORTAINER_VER in dcape ($$PORTAINER_VER0) differs from yours ($$PORTAINER_VER)" ; \
