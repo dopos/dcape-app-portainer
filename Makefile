@@ -6,7 +6,7 @@ SHELL                 = /bin/bash
 CFG                  ?= .env
 
 # Docker image version tested for actual dcape release
-PORTAINER_VER0       ?= 2.18.4-alpine
+PORTAINER_VER0       ?= 2.19.4-alpine
 
 #- ******************************************************************************
 #- Portainer config
