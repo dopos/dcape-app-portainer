@@ -7,7 +7,7 @@
 [1]: https://img.shields.io/github/release/dopos/dcape-app-portainer.svg
 [2]: https://github.com/dopos/dcape-app-portainer/releases
 [3]: https://img.shields.io/github/languages/code-size/dopos/dcape-app-portainer.svg
-[4]: https://img.shields.io/github/license/dopos/dcape-app-portainerOB.svg
+[4]: https://img.shields.io/github/license/dopos/dcape-app-portainer.svg
 [5]: LICENSE
 
  Роль в dcape | Сервис | Docker image
